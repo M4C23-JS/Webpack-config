@@ -1,4 +1,5 @@
-const ListTodoInstance = new ListTodo();
+import {ListTodoInstance } from '../index.js'
+import {contarPendientes} from './contarPendientes.function'
 
 const toggleEstadoTarea = (e) => {
     if (e.target.className === "toggle"){
@@ -16,4 +17,8 @@ const toggleEstadoTarea = (e) => {
         //console.log(arr2[0])
         contarPendientes()
     }
+}
+
+export {
+    toggleEstadoTarea
 }

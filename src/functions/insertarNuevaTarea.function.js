@@ -1,6 +1,6 @@
-
-const ListTodoInstance = new ListTodo();
-
+import {ListTodoInstance} from '../index.js'
+import {Todo} from '../classes/index.js';
+import {contarPendientes} from './contarPendientes.function'
 
 const insertarNuevaTarea = (e) => {
     if( e.keyCode === 13 ){
@@ -13,4 +13,8 @@ const insertarNuevaTarea = (e) => {
         e.target.value = ""
         contarPendientes()
     }  
+}
+
+export {
+    insertarNuevaTarea
 }

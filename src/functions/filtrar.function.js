@@ -1,4 +1,5 @@
-const ListTodoInstance = new ListTodo();
+import {ListTodoInstance,lis} from '../index.js'
+import {contarPendientes} from './contarPendientes.function'
 
 const filtrar = (filtro) => {
     ListTodoInstance.filtrarLista(filtro,lis)
@@ -8,4 +9,9 @@ const filtrarCompletados = () => filtrar('completados')
 const filtrarTodos = () => filtrar('todos')
 const filtrarPendientes = () => filtrar('pendientes') 
 
-const borrarCompletados = () => ListTodoInstance.borrarCompletados(lis)
+export {
+    filtrar,
+    filtrarCompletados,
+    filtrarTodos,
+    filtrarPendientes
+}
