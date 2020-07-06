@@ -1,6 +1,6 @@
-# Webpack Start COnfig
+# TODO Lista de Tareas
 
-Este es el repositorio de la configuración básica del webpack
+Este es el repositorio para mi proyecto de Lista de Tareas con JS
 
 ### Notas:
 Se debe contruir el node_modules:
